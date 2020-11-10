@@ -1,0 +1,601 @@
+*{padding: 0;margin: 0;list-style: none;}
+body{
+    background: url("../images/page_bg/bg2.png");
+    background-size: 100%;
+    overflow: hidden;
+    /*color: #863918;*/
+}
+.video{
+    position: absolute;
+    width: 100%;
+    /*height: 910px;*/
+    z-index: 10;
+    mix-blend-mode: screen;
+    pointer-events: none;
+    opacity: 0.3;
+}
+.big_box{
+    width: 100%;
+    min-width: 1500px;
+    display: flex;
+}
+.left{
+    width: 30%;
+    display: flex;
+    /*background: green;*/
+}
+.mid{
+    width: 40%;
+    /*background: #38a1bf;*/
+}
+.right{
+    width: 30%;
+    display: flex;
+    /*background: #A84848;*/
+}
+
+/*玩家一的信息样式*/
+.info_1{
+    width: 200px;
+    margin-top: 20px;
+    /*background: #3f9ade;*/
+}
+.photo_1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("../images/photo/photo_1.png") no-repeat;
+    background-size: 100px 100px;
+    margin-left: 50px;
+}
+.info_1 ul{
+    width: 200px;
+    height: 100px;
+}
+.name_1,.money_1{
+    width: 200px;
+    height: 50px;
+    font-family: "楷体";
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: #f3f34f;
+}
+.name_1,.money_4{
+    width: 200px;
+    height: 50px;
+    font-family: "楷体";
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: #f3f34f;
+}
+.play_1{
+    position: relative;
+    width: 150px;
+    height: 229px;
+    margin-top: 20px;
+    margin-right: 30px;
+    /*background: white;*/
+    /*background: url("../images/back/back.png");*/
+}
+
+/*中部上面部分样式*/
+.mid_top{
+    width: 100%;
+    height: 230px;
+}
+.all_poker{
+    position: relative;
+    width: 150px;
+    height: 229px;
+    margin: 30px auto 0;
+    /*background: url("../images/back/back.png");*/
+}
+.all_poker li{
+    position: absolute;
+}
+.temp_poker{
+    width: 150px;
+    height: 229px;
+    margin: 100px auto 0;
+    position: relative;
+}
+.back {
+    width:150px;
+    height: 229px;
+    background: url("../images/back/back.png");
+    position: absolute;
+    z-index: 100;
+}
+.io_button{
+    height: 150px;
+    width: 100%;
+    /*background: #999999;*/
+}
+.start,.exit{
+    width: 50%;
+    height: 150px;
+    float: left;
+}
+.start a,.exit a{
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    color: #b1b17e;
+    text-decoration: none;
+    font-family: 方正粗黑宋简体;
+}
+.start a{
+    float: right;
+    margin-right: 20px;
+    background: url("../images/button/btn.png") no-repeat -50px -200px;
+}
+.exit a{
+    /*left: 595px;*/
+    background: url("../images/button/btn.png") no-repeat -50px -200px;
+    margin-left: 20px;
+}
+.start a:hover,.exit a:hover{
+    width: 141px;
+    height: 52px;
+    color: white;
+    font-size: 27px;
+    border-radius: 6px;
+    line-height: 52px;
+}
+/*中间下部玩家二信息样式*/
+.mid_bottom{
+    width: 100%;
+    height: 500px;
+    margin:  0 0;
+    /*background-color: #f3f34f;*/
+}
+.play_2{
+    position: relative;
+    width: 150px;
+    height: 229px;
+    margin: 21px auto 0;
+    /*background: white;*/
+    /*background: url("../images/face/1.png") no-repeat -222px -325px;*/
+}
+.info_2{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 25px;
+    /*background: #A84848;*/
+}
+.photo_2{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("../images/photo/photo_2.png") no-repeat;
+    background-size: 100px 100px;
+    margin-left: 50px;
+    float: left;
+}
+.info_2>ul{
+    width: 200px;
+    height: 100px;
+    margin-left: 30px;
+    float: left;
+}
+/* 对话框 */
+.info_2 .chat{
+    position: absolute;
+    top: 10px;
+    left: 1200px;
+    cursor: pointer;
+}
+.info_2 .chat:hover{
+    filter: drop-shadow(0 0 15px #EEBF23);
+}
+.info_2 .ltk{
+    display: none;
+    position: absolute;
+    width: 595px;
+    height: 407px;
+    cursor: pointer;
+    opacity: 0.8;
+    top: -400px;
+    left: 50%;
+    margin-left: 250px;
+    background: url(../images/photo/ltk.png);
+    border-radius: 50px;
+    z-index: 100;
+}
+.ltk li{
+    width: 220px;
+    height: 70px;
+    font-size: 22px;
+    line-height: 35px;
+    font-family: 楷体;
+    font-weight: bold;
+    /*margin-top: 40px;*/
+    /*margin-left: 45px;*/
+    /*background: black;*/
+    float: left;
+}
+.ltk li:hover{
+    color: #31190d;
+    font-size: 23px;
+}
+.ltk li:nth-of-type(1){
+    margin-top: 32px;
+    margin-left: 44px;
+    /*background: black;*/
+}
+.ltk li:nth-of-type(2){
+    margin-top: 32px;
+    margin-left: 60px;
+    /*background: black;*/
+}
+.ltk li:nth-of-type(3){
+    margin-top: 42px;
+    margin-left: 45px;
+    /*background: black;*/
+}
+.ltk li:nth-of-type(4){
+    margin-top: 47px;
+    margin-left: 60px;
+    /*background: black;*/
+}
+.ltk li:nth-of-type(5){
+    margin-top: 50px;
+    margin-left: 45px;
+    /*background: black;*/
+}
+.ltk li:nth-of-type(6){
+    margin-top: 55px;
+    margin-left: 60px;
+    /*background: black;*/
+}
+/*显示聊天文字样式*/
+.talking{
+    position: absolute;
+    top: 43%;
+    left: 35%;
+    width: 600px;
+    height: 60px;
+    /*border: 2px red solid;*/
+    color: #f3f34f;
+    line-height: 60px;
+    font-size: 32px;
+    text-align: center;
+    font-family: 楷体;
+    z-index:99999;
+}
+.name_2,.money_2{
+    width: 200px;
+    height: 50px;
+    font-family: "楷体";
+    font-size: 24px;
+    line-height: 50px;
+    color: #f3f34f;
+}
+
+/*右边玩家三信息样式*/
+.play_3{
+    position: relative;
+    width: 150px;
+    height: 229px;
+    margin-top: 20px;
+    margin-left: 30px;
+    /*background: white;*/
+    /*background: url("../images/back/back.png");*/
+}
+.info_3{
+    width: 200px;
+    height: 880px;
+    margin-top: 20px;
+    /*background: #3f9ade;*/
+}
+.photo_3{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("../images/photo/photo_3.png") no-repeat;
+    background-size: 100px 100px;
+    margin-left: 50px;
+}
+.info_3 ul{
+    width: 200px;
+    height: 100px;
+}
+.name_3,.money_3{
+    width: 200px;
+    height: 50px;
+    font-family: "楷体";
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    float: left;
+    color: #f3f34f;
+}
+
+.out_1,.out_2,.out_3{
+    display: none;
+    position: relative;
+}
+
+.play_1 li,.play_2 li,.play_3 li,.out_1 li,.out_2 li,.out_3 li{
+    position: absolute;
+}
+
+.out_poker{
+    margin: auto auto;
+}
+.left .out_poker,.right .out_poker{
+    width: 100px;
+}
+.mid_bottom .out_poker{
+    height: 230px;
+}
+.play_1 .on{
+    left: 10px;
+}
+.play_2 .on {
+    top:-20px;
+}
+.play_3 .on{
+    left: -10px;
+}
+
+.get-boss {
+    display: none;
+    margin: 0 auto;
+}
+.play-btn {
+    display: none;
+}
+/* 倒计时定时器 */
+.m{
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background:url(../images/button/time.png);
+    background-size: 100%;
+    /* border: 1px solid blueviolet; */
+    /*position: relative;*/
+}
+.m span{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid blueviolet; */
+    font-size: 30px;
+    text-align: center; 
+    margin-left: 25px;
+    margin-top: 27px;
+    /*position: absolute;*/
+    /*top: 30px;*/
+    color: white;                  
+}
+.info_1 .m{
+    top: 5%;
+    left: 71%;
+}
+.info_2 .m{
+    top:-440%;
+    left: 43.5%;
+}
+.right .m{
+    top:5%;
+    right: 21.5%;
+
+}
+/*按钮样式*/
+.left,.mid.right{
+    position: relative;
+}
+.left .get,.left .cancel,.mid .get,.mid .cancel,.right .get,.right .cancel,.play,.tishi{
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background: url("../images/button/get_boss.png") -100px -95px;
+    font-family: 方正粗黑宋简体;
+    color: #f3f34f;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+}
+.left .get,.left .play{
+    left: 370px;
+    top: 20%;
+}
+.left .cancel{
+    left: 470px;
+    top: 20%;
+}
+.left .tishi{
+    left: 420px;
+    top: 25%;
+}
+.mid .get,.mid .play{
+    left: 50%;
+    top: 50%;
+    margin-left: -90px;
+}
+.mid .cancel{
+    left: 50%;
+    top: 50%;
+    margin-left: 10px;
+}
+.mid .tishi{
+    left: 50%;
+    top: 50%;
+    margin-left: 110px;
+}
+.right .get,.right .play{
+    right: 470px;
+    top: 20%;
+}
+.right .cancel{
+    right: 370px;
+    top: 20%;
+}
+.right .tishi{
+    right: 420px;
+    top: 25%;
+}
+
+/* 动画 */
+.zhadan{
+    position: absolute;
+    left: 40%;
+    margin-top: 50px;
+    display: none;
+    filter: drop-shadow(0 0 15px #EEBF23);
+}
+.feiji{
+    position: absolute;
+    display: none;
+    margin-left: 1700px;
+}
+@keyframes feiji_run {
+    0%{
+        margin-left: 1700px;
+        
+    }
+    40%,50%{
+        margin-left: 800px;
+    }
+    100%{
+        margin-left: -400px;
+        margin-top: 100px;
+    }
+}
+
+/* 牌面变色 */
+.play_1 li:before{
+    content: "";
+    display:block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    background: #999999;
+    opacity: .75;
+}
+.play_1 li:hover:before{
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.play_2 li:before{
+    content: "";
+    display:block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    background: #999999;
+    opacity: .75;
+}
+.play_2 li:hover:before{
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.play_3 li:before{
+    content: "";
+    display:block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: 50%;
+    bottom: 50%;
+    background: #999999;
+    opacity: .75;
+}
+.play_3 li:hover:before{
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.help{
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 100;
+    color: white;
+    font-size: 32px;
+    font-family: 楷体;
+}
+/*地主帽子样式*/
+.info_1 .crown1{
+    width: 61px;
+    height: 50px;
+    background: url("../images/logo/crown.png");
+    margin-left: 67px;
+    display: none;
+}
+.info_2 .crown2{
+    position: absolute;
+    width: 61px;
+    height: 50px;
+    background: url("../images/logo/crown.png");
+    margin-left: 67px;
+    margin-top: -50px;
+    display: none;
+}
+.info_3 .crown3{
+    width: 61px;
+    height: 50px;
+    background: url("../images/logo/crown.png");
+    margin-left: 67px;
+    display: none;
+}
+/* 抢地主样式 */
+.qdz1{
+	width: 150px;
+	height: 150px;
+	/* background: url(../images/qdz/jdz.png); */
+}
+.qdz2{
+	width: 150px;
+	height: 150px;
+	/* background: url(../images/qdz/qdz.png); */
+}
+.qdz3{
+	width: 150px;
+	height: 150px;
+	/* background: url(../images/qdz/qdz.png); */
+}
+.huojian{
+				position: absolute;
+				left: 30%;
+				margin-top: 1000px;
+				/* filter: drop-shadow(0 0 15px #EEBF23); */
+			}
+			@keyframes huojian_run {
+				0%{
+					
+					margin-top: 1000px;
+				}
+				20%,70%{
+					margin-top: 80px;
+				}
+				100%{					
+					margin-top: -300px;
+				}
+			}

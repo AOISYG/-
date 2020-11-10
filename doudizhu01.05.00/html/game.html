@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>游戏界面</title>
+    <link rel="stylesheet" type="text/css" href="../css/game.css" />
+    <link rel="stylesheet" href="../css/last_comon.css">
+    <link rel="stylesheet" href="../css/last_sl.css">
+    <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../js/game.js"></script>
+    <script type="text/javascript" src="../js/public.js"></script>
+</head>
+<body>
+ <video class="video" src="../video/bg1.mp4" autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline"></video>
+<div class="big_box">
+    <div class="help">流局啦</div>
+    <div class="left">
+        <div class="info_1">
+            <div class="crown1"></div>
+            <div class="photo_1"></div>
+            <ul>
+                <li class="name_1">药水酱</li>
+                <li class="money_1">竞技币：<span></span></li>
+                <li class="money_4">倍数：<span></span></li>
+            </ul>
+            <div class="m"><span>15</span></div>
+        </div>
+        <ul class="play_1"></ul>
+        <div class="out_poker">	
+		<div class="qdz1"></div>
+					
+            <div class="get-boss">
+               <button class="get"></button>
+                <button class="cancel"></button>
+            </div>
+            <div class="play-btn">
+                <button class="play">出牌</button>
+                <button class="tishi">提示</button>
+                <button class="cancel">过牌</button>
+            </div>
+            <ul class="out_1"></ul>
+        </div>
+    </div>
+    
+    <div class="mid">
+        <div class="talking"></div>
+        <div class="mid_top">
+            <ul class="all_poker"></ul>
+            <div class="io_button">
+                <div class="start">
+                    <a href="#">开始游戏</a>
+                </div>
+                <div class="exit">
+                    <a href="index.html">退出游戏</a>
+                </div>
+            </div>
+        </div>
+        <div class="mid_bottom">
+            <div class="out_poker">				
+                <div class="get-boss">
+                    <button class="get">抢地主</button>
+                    <button class="cancel">不抢</button>
+                </div>
+                <div class="play-btn">
+                    <button class="play">出牌</button>
+                    <button class="tishi">提示</button>
+                    <button class="cancel">过牌</button>
+                </div>
+                <ul class="out_2"></ul>
+            </div>
+            <ul class="play_2">
+			</ul>
+            <div class="info_2">
+                <div class="crown2"></div>
+                <div class="m"><span>15</span></div>
+                <div class="photo_2"></div>
+                <ul>
+                    <li class="name_2">阿giao</li>
+                    <li class="money_2">竞技币：<span></span></li>
+                </ul>
+                <!-- 对话框 -->
+                <!-- 按钮 -->
+                <div class="chat">
+                    <img src="../images/logo/talk.png" />
+                </div>
+                <!-- 聊天框 -->
+                <ul class="ltk">
+                    <li>
+                        快点吧，我等的花儿都谢了！
+                    </li>
+                    <li>
+                        和你合作真是太愉快了！
+                    </li>
+                    <li>
+                        你是MM还是GG啊？
+                    </li>
+                    <li>
+                        不要吵了不要吵了，专心玩游戏吧！
+                    </li>
+                    <li>
+                        不要走决战到天亮！
+                    </li>
+                    <li>
+                        你打的牌也太好了！
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="right">
+        <div class="out_poker">
+			<div class="qdz2"></div>
+            <div class="get-boss">
+                <button class="get">抢地主</button>
+                <button class="cancel">不抢</button>
+            </div>
+            <div class="play-btn">
+                <button class="play">出牌</button>
+                <button class="tishi">提示</button>
+                <button class="cancel">过牌</button>
+            </div>
+            <ul class="out_3"></ul>
+        </div>
+        <ul class="play_3"></ul>
+        <div class="info_3">
+            <div class="crown3"></div>
+            <div class="photo_3"></div>
+            <ul>
+                <li class="name_3">大司马</li>
+                <li class="money_3">竞技币：<span></span></li>
+            </ul>
+            <div class="m"><span>15</span></div>
+        </div>
+    </div>
+
+    <div class="last_box">
+        <div class="tb"></div>
+        <div class="tx">
+            <div class="rw"></div>
+        </div>
+      
+           <ul class="AF_li">
+                <li>昵称</li>
+                <li>底分</li>
+                <li>倍数</li>
+                <li>金额</li>
+            </ul>
+            <div class="BF_th">
+        
+               <p>药水酱</p>
+               <p class="end_1">-1000</p>
+               <p class="mul">3倍</p>
+               <p>1</p>
+
+               <p>阿giao</p>
+               <p class="end_2">-1000</p>
+               <p class="mul">3倍</p>
+               <p>1</p>
+
+               <p>大司马</p>
+               <p class="end_3">-1000</p>
+               <p class="mul">3倍</p>
+               <p>1</p>      
+        </div>
+
+       <div class="logo">
+           
+       </div>
+       <div class="btn">
+            <a href="game.html">继续游戏</a>
+            <a href="index.html" id="tc">退出游戏</a>
+        </div>
+    </div>
+    <!-- 炸弹 -->
+    <audio id="zhadan_bgm" src="../audio/zhadan.mp3" autoplay="autoplay" preload="auto" loop="loop" ></audio>
+	<div class="zhadan">
+		<img src="../images/kptx_img/zhadan.gif" />
+    </div>
+    <!-- 飞机 -->
+    <audio id="feiji_bgm" src="../audio/feiji.mp3" autoplay="autoplay" preload="auto" loop="loop" ></audio>
+    <div class="feiji">
+        <img src="../images/kptx_img/feiji.gif" />
+    </div>
+	<!-- 火箭 -->
+	<audio id="huojian_bgm" src="./audio/qiangshen.mp3" autoplay="autoplay" preload="auto" loop="loop" ></audio>
+	<div class="huojian">
+		<img src="../images/photo/huojian.gif" />
+	</div>
+	<!-- 抢地主音频 -->
+	<audio id="jdz" src="../audio/Woman/jdz.wav"></audio>
+	<audio id="qdz_a" src="../audio/Woman/qdz0.wav"></audio>
+	<audio id="qdz_b" src="../audio/Woman/qdz1.wav"></audio>
+	<audio id="qdz_c" src="../audio/Woman/qzd2.wav"></audio>
+	<audio id="bj" src="../audio/Woman/bj.wav"></audio>
+	<audio id="bq" src="../audio/Woman/bq.wav"></audio>
+	<!-- 聊天框音频 -->
+	<!-- 出牌音频 -->
+	<audio id="buyao" src="../audio/Woman/buyao4.wav"></audio>
+	<!-- 聊天框音频 -->
+	<audio id="ltk1" src="../audio/ltk/kuaidian.mp3"></audio>
+	<audio id="ltk2" src="../audio/ltk/henihezuo.mp3"></audio>
+	<audio id="ltk3" src="../audio/ltk/nishimm.mp3"></audio>
+	<audio id="ltk4" src="../audio/ltk/buyaochaole.mp3"></audio>
+	<audio id="ltk5" src="../audio/ltk/buyaozou.mp3"></audio>
+	<audio id="ltk6" src="../audio/ltk/nidepaidade.mp3"></audio>
+	<audio id="bgMusic_2" src="../audio/bg_2.mp3" loop="loop"></audio>
+	<audio id="yingle" src="../audio/MusicEx/Win.ogg"></audio>
+	<audio id="shule" src="../audio/MusicEx/Lose.ogg"></audio>
+	<!-- 出牌音频特殊 -->
+	<audio id="zhadan" src="../audio/Woman/zhadan.wav"></audio>
+	<audio id="sandaiyi" src="../audio/Woman/sandaiyi.wav"></audio>
+	<audio id="sange" src="../audio/Woman/sange.wav"></audio>
+	<audio id="shunzi" src="../audio/Woman/shunzi.wav"></audio>
+	<audio id="sandaiyidui" src="../audio/Woman/sandaiyidui.wav"></audio>
+	<audio id="feiji" src="../audio/Woman/feiji.wav"></audio>
+	<audio id="liandui" src="../audio/Woman/liandui.wav"></audio>
+	<audio id="wangzha" src="../audio/Woman/wangzha.wav"></audio>
+	<audio id="sidaier" src="../audio/Woman/sidaier.wav"></audio>
+	<audio id="sidailiangdui" src="../audio/Woman/sidailiangdui.wav"></audio>
+	<!-- 单张牌音频 -->
+	<audio id="san" src="../audio/Woman/3.wav"></audio>
+	<audio id="si" src="../audio/Woman/4.wav"></audio>
+	<audio id="wu" src="../audio/Woman/5.wav"></audio>
+	<audio id="liu" src="../audio/Woman/6.wav"></audio>
+	<audio id="qi" src="../audio/Woman/7.wav"></audio>
+	<audio id="ba" src="../audio/Woman/8.wav"></audio>
+	<audio id="jiu" src="../audio/Woman/9.wav"></audio>
+	<audio id="shi" src="../audio/Woman/10.wav"></audio>
+	<audio id="j" src="../audio/Woman/11.wav"></audio>
+	<audio id="q" src="../audio/Woman/12.wav"></audio>
+	<audio id="k" src="../audio/Woman/13.wav"></audio>
+	<audio id="a" src="../audio/Woman/1.wav"></audio>
+	<audio id="er" src="../audio/Woman/2.wav"></audio>
+	<audio id="dawang" src="../audio/Woman/14.wav"></audio>
+	<audio id="xiaowang" src="../audio/Woman/15.wav"></audio>
+	<!-- 对子音频 -->
+	<audio id="duisan" src="../audio/Woman/dui3.wav"></audio>
+	<audio id="duisi" src="../audio/Woman/dui4.wav"></audio>
+	<audio id="duiwu" src="../audio/Woman/dui5.wav"></audio>
+	<audio id="duiliu" src="../audio/Woman/dui6.wav"></audio>
+	<audio id="duiqi" src="../audio/Woman/dui7.wav"></audio>
+	<audio id="duiba" src="../audio/Woman/dui8.wav"></audio>
+	<audio id="duijiu" src="../audio/Woman/dui9.wav"></audio>
+	<audio id="duishi" src="../audio/Woman/dui10.wav"></audio>
+	<audio id="duij" src="../audio/Woman/dui11.wav"></audio>
+	<audio id="duiq" src="../audio/Woman/dui12.wav"></audio>
+	<audio id="duik" src="../audio/Woman/dui13.wav"></audio>
+	<audio id="duia" src="../audio/Woman/dui1.wav"></audio>
+	<audio id="duier" src="../audio/Woman/dui2.wav"></audio>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: '微软雅黑';
+    text-decoration-line: none;
+}
+
+.last_box{
+    display: none;
+    width: 650px;
+    height: 450px;
+    margin: 0 auto;
+    background:no-repeat url(../images/end/jsk.png);
+    background-size: 100%;
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    color: white;
+}
+.last_box .tx{
+    width: 120px;
+    height: 120px;
+    background:url(../images/end/txk.png);
+    background-size: 100%;
+    position: absolute;
+    left: 30px;
+    top: 100px;
+    border-radius: 50%;
+}
+
+.AF_li{
+    position: absolute;
+    left: 120px;
+    top: 120px;
+}
+
+.AF_li li{
+   float: left;
+   margin: 0 0 0 60px;
+}
+.BF_th{
+    width: 350px;
+    height: 40px;
+    position: absolute;
+    top: 155px;
+    left: 178px;
+    /* border: 1px solid red; */
+}
+p{
+    margin: 15px 55px 0 0;
+    float: left;
+}
+
+.btn{
+    position: absolute;
+    left: 200px;
+    top: 340px;
+}
+
+.btn a{
+    width: 30px;
+    font-size: 16px;
+    color: floralwhite;
+    border-radius: 8px;
+    background-color: dodgerblue;
+    
+}
+
+#tc{
+    background: gray;
+}
+
+
+
